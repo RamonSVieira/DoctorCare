@@ -1,0 +1,32 @@
+.font-title {
+  font: 700 3.25rem/1.3 "DM Sans", sans-serif;
+}
+
+.font-title-2 {
+  font: 700 2.5rem/1.3 "DM Sans", sans-serif;
+}
+
+.font-title-3 {
+  font: 700 1.5rem/1.3 "DM Sans", sans-serif;
+}
+
+.font-subtitle {
+  font: 400 1.125rem/1.5 "DM Sans", sans-serif;
+}
+
+.font-title-stats {
+  font: 700 3rem/1.3 "DM Sans", sans-serif;
+}
+
+.font-heat-text {
+  font: 700 0.87rem/1.5 "DM Sans", sans-serif;
+  letter-spacing: 0.08rem;
+}
+
+.font-botao {
+  font: 700 0.87rem/1.5 "DM Sans", sans-serif;
+}
+
+.font-text {
+  font: 400 1rem/1.5 "DM Sans", sans-serif;
+}

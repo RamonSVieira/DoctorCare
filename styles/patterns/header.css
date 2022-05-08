@@ -1,0 +1,160 @@
+.bg-header {
+  background-color: var(--brand-green-light);
+}
+
+header {
+  position: fixed;
+  width: 100%;
+
+  color: var(--primary-color);
+}
+
+header .container {
+  padding-block: 16px;
+}
+
+header.scroll {
+  background-color: var(--primary-color);
+  color: var(--brand-green-light-02);
+}
+
+header.scroll nav > a:nth-child(1) svg path {
+  fill: white;
+}
+
+header.scroll nav > a:nth-child(4) svg path {
+  stroke: white;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+header nav ul li a {
+  padding: 12px 18px;
+  opacity: 0.7;
+  position: relative;
+}
+
+header nav ul li a:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+}
+
+header.scroll nav ul li a:hover::after {
+  background-color: var(--brand-green-light-02);
+}
+
+header nav ul li a:hover {
+  opacity: 1;
+}
+
+.hamburguer,
+.social-link,
+.close,
+.botao-mobile {
+  display: none;
+}
+
+@media (max-width: 1020px) {
+  header nav ul {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  header nav .menu,
+  .secondary-botao {
+    display: none;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  body.menu-expanded .hamburguer {
+    display: none;
+  }
+
+  body.menu-expanded {
+    overflow: hidden;
+  }
+
+  body.menu-expanded > *:not(#navigation) {
+    display: none;
+  }
+
+  body.menu-expanded .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    background-color: var(--primary-color);
+    color: var(--brand-green-light-02);
+
+    width: 100vw;
+    height: 100vh;
+  }
+
+  body.menu-expanded .social-link,
+  body.menu-expanded .close,
+  body.menu-expanded .secondary-botao.botao-mobile {
+    display: block;
+  }
+
+  body.menu-expanded header nav > a:nth-child(1) svg path {
+    fill: white;
+  }
+
+  body.menu-expanded .menu ul {
+    flex-direction: column;
+    padding: 0;
+    gap: 48px;
+    margin-bottom: 48px;
+    margin-top: 120px;
+  }
+
+  body.menu-expanded .font-text {
+    font-size: 24px;
+  }
+
+  body.menu-expanded .botao-mobile {
+    color: var(--brand-green);
+    font-size: 18px;
+    padding: 16px 32px;
+  }
+}
+
+body.menu-expanded .menu .social-link {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 32px;
+
+  margin-top: 80px;
+}
