@@ -8,6 +8,10 @@ body {
   overflow: overlay;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -31,23 +35,23 @@ ul {
 .container {
   box-sizing: border-box;
   max-width: 1440px;
-  padding: 40px 80px;
+  padding: 100px 80px;
   margin: 0 auto;
 }
 
 @media (max-width: 991.98px) {
   .container {
-    padding: 40px 80px;
+    padding: 100px 80px;
   }
 }
 @media (max-width: 767px) {
   .container {
-    padding: 40px 60px;
+    padding: 100px 60px;
   }
 }
 
 @media (max-width: 575.98px) {
   .container {
-    padding: 16px 24px;
+    padding: 100px 24px;
   }
 }

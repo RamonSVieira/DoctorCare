@@ -7,6 +7,7 @@ header {
   width: 100%;
 
   color: var(--primary-color);
+  z-index: 2;
 }
 
 header .container {
@@ -88,6 +89,7 @@ header nav ul li a:hover {
 
 @media (max-width: 991px) {
   header nav .menu,
+  header.scroll nav ul li a:hover::after,
   .secondary-botao {
     display: none;
   }
@@ -105,7 +107,7 @@ header nav ul li a:hover {
   }
 
   body.menu-expanded > *:not(#navigation) {
-    display: none;
+    visibility: hidden;
   }
 
   body.menu-expanded .menu {
