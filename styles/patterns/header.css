@@ -16,6 +16,9 @@ header .container {
 
 header.scroll {
   background-color: var(--primary-color);
+}
+
+header.scroll a {
   color: var(--brand-green-light-02);
 }
 

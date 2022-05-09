@@ -17,13 +17,17 @@ function closeMenu() {
 ScrollReveal({
   origin: "top",
   distance: "60px",
-  duration: 500,
+  duration: 600,
   reset: true,
 }).reveal(`
   #introduction,
-  #introduction img,
+  #introduction .cont-img img,
   #introduction .stats,
   #services,
   #services .title,
-  #services .cards .card 
+  #services .cards .card,
+  #about,
+  #about .title,
+  #about .content p,
+  #about .content img
   `);

@@ -1,0 +1,22 @@
+#about {
+  background-color: var(--brand-beige);
+}
+
+#about .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+#about .content {
+  display: flex;
+  flex-direction: column;
+}
+
+#about .content img {
+  margin-top: 60px;
+}
+
+@media (min-width: 991px) {
+}

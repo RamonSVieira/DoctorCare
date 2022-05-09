@@ -32,4 +32,5 @@
 
 .font-text {
   font: 400 1rem/1.5 "DM Sans", sans-serif;
+  color: var(--paragraph);
 }
