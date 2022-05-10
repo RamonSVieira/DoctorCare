@@ -6,8 +6,12 @@ header {
   position: fixed;
   width: 100%;
 
-  color: var(--primary-color);
   z-index: 2;
+}
+
+header a {
+  color: var(--primary-color);
+  font-weight: 700;
 }
 
 header .container {
@@ -16,6 +20,10 @@ header .container {
 
 header.scroll {
   background-color: var(--primary-color);
+}
+
+body.menu-expanded a {
+  color: var(--brand-green-light-02);
 }
 
 header.scroll a {
