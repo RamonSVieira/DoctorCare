@@ -18,7 +18,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -32,26 +33,34 @@ ul {
   list-style-type: none;
 }
 
-.container {
+.container,
+.container-footer {
   box-sizing: border-box;
   max-width: 1440px;
   padding: 100px 80px;
   margin: 0 auto;
 }
 
-@media (max-width: 991.98px) {
-  .container {
-    padding: 100px 80px;
-  }
+.container-footer {
+  padding: 60px 80px;
 }
+
 @media (max-width: 767px) {
   .container {
     padding: 100px 60px;
+  }
+
+  .container-footer {
+    padding: 60px 60px;
   }
 }
 
 @media (max-width: 575.98px) {
   .container {
     padding: 100px 24px;
+  }
+
+  .container-footer {
+    padding: 60px 24px;
   }
 }

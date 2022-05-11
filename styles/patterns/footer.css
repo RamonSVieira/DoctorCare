@@ -1,0 +1,44 @@
+footer {
+  background-color: var(--primary-color);
+}
+
+footer .logo svg {
+  width: 236px;
+  height: 31px;
+  margin-bottom: 24px;
+}
+
+footer p.font-text {
+  color: var(--brand-beige);
+  line-height: 2;
+  margin-bottom: 32px;
+}
+
+footer .logo path {
+  fill: white;
+}
+
+footer .social-link {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+#backToTopButton {
+  position: fixed;
+  right: 20px;
+  bottom: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(200%);
+  transition: 500ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+
+  transform: translateY(0);
+}

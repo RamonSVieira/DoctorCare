@@ -1,0 +1,24 @@
+#contact .title {
+  margin-bottom: 32px;
+}
+
+#contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+#contact ul li {
+  display: flex;
+  gap: 8px;
+}
+
+#contact .content a {
+  margin-bottom: 60px;
+}
+
+#contact .content > img {
+  display: block;
+  width: 100%;
+}

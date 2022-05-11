@@ -1,8 +1,23 @@
+window.addEventListener("scroll", onScroll);
+
 function onScroll() {
+  showNavOnScroll();
+  showBackToTopButtonOnScroll();
+}
+
+function showNavOnScroll() {
   if (scrollY > 0) {
     navigation.classList.add("scroll");
   } else {
     navigation.classList.remove("scroll");
+  }
+}
+
+function showBackToTopButtonOnScroll() {
+  if (scrollY > 600) {
+    backToTopButton.classList.add("show");
+  } else {
+    backToTopButton.classList.remove("show");
   }
 }
 
@@ -17,8 +32,7 @@ function closeMenu() {
 ScrollReveal({
   origin: "top",
   distance: "60px",
-  duration: 600,
-  reset: true,
+  duration: 500,
 }).reveal(`
   #introduction,
   #introduction .cont-img img,

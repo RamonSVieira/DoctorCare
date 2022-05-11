@@ -48,16 +48,6 @@
   margin-bottom: 32px;
 }
 
-.intro-text a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-
-  color: var(--font-color-1);
-  text-transform: uppercase;
-}
-
 .stats {
   display: flex;
   flex-direction: column;
