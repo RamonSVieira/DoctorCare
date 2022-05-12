@@ -43,5 +43,9 @@ ScrollReveal({
   #about,
   #about .title,
   #about .content p,
-  #about .content img
+  #about .content img,
+  #contact,
+  #contact .title,
+  #contact .content,
+  footer
   `);
