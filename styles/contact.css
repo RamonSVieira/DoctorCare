@@ -18,7 +18,21 @@
   margin-bottom: 60px;
 }
 
-#contact .content > img {
+#contact .col-b img {
   display: block;
   width: 100%;
+}
+
+@media (min-width: 991px) {
+  #contact .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 36rem;
+    grid-template-areas: "A B";
+    gap: 60px;
+  }
+
+  #contact h2 {
+    max-width: 400px;
+  }
 }

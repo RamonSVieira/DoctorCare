@@ -12,6 +12,10 @@ html {
   scroll-behavior: smooth;
 }
 
+img {
+  display: block;
+}
+
 h1,
 h2,
 h3,
@@ -41,8 +45,22 @@ ul {
   margin: 0 auto;
 }
 
+.col-a {
+  grid-area: A;
+}
+
+.col-b {
+  grid-area: B;
+}
+
 .container-footer {
   padding: 60px 80px;
+}
+
+@media (min-width: 991px) {
+  body {
+    overflow: auto;
+  }
 }
 
 @media (max-width: 767px) {

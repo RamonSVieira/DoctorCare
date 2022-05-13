@@ -14,9 +14,24 @@
   flex-direction: column;
 }
 
-#about .content img {
+#about img {
+  width: 100%;
+}
+
+#about img {
   margin-top: 60px;
 }
 
 @media (min-width: 991px) {
+  #about img {
+    margin-top: 0;
+  }
+
+  #about .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "B A";
+    gap: 60px;
+  }
 }

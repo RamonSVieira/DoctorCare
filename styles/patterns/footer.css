@@ -42,3 +42,17 @@ footer .social-link {
 
   transform: translateY(0);
 }
+
+@media (min-width: 991px) {
+  footer .container-footer {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "A B";
+  }
+
+  footer .container-footer .col-b {
+    justify-self: end;
+  }
+}
