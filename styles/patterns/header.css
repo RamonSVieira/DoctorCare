@@ -67,7 +67,22 @@ header nav ul li a {
   position: relative;
 }
 
+header nav ul li a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  transition: width 0.3s;
+}
+
 header nav ul li a:hover::after {
+  width: 100%;
+}
+
+header nav div ul li a.active::after {
   content: "";
   display: block;
   width: 100%;
@@ -75,6 +90,13 @@ header nav ul li a:hover::after {
   background-color: var(--primary-color);
   position: absolute;
   bottom: 0;
+  opacity: 1;
+}
+header nav ul li a.active {
+  opacity: 1;
+}
+header.scroll nav ul li a.active::after {
+  background-color: var(--brand-green-light-02);
 }
 
 header.scroll nav ul li a:hover::after {
@@ -101,6 +123,7 @@ header nav ul li a:hover {
 @media (max-width: 991px) {
   header nav .menu,
   header.scroll nav ul li a:hover::after,
+  header.scroll nav ul li a.active::after,
   .secondary-botao {
     display: none;
   }

@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  margin-bottom: 200px;
   background-color: var(--brand-green-light-02);
 
   overflow: overlay;
@@ -53,13 +52,15 @@ ul {
   grid-area: B;
 }
 
-.container-footer {
-  padding: 60px 80px;
-}
-
 @media (min-width: 991px) {
   body {
     overflow: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .container-footer {
+    padding: 60px 80px;
   }
 }
 

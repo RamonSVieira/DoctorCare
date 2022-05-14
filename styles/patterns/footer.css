@@ -55,4 +55,8 @@ footer .social-link {
   footer .container-footer .col-b {
     justify-self: end;
   }
+
+  footer p.font-text {
+    margin-bottom: 0;
+  }
 }

@@ -1,8 +1,43 @@
 window.addEventListener("scroll", onScroll);
 
+onScroll();
 function onScroll() {
   showNavOnScroll();
   showBackToTopButtonOnScroll();
+
+  activateMenuAtCurrentSection(introduction);
+  activateMenuAtCurrentSection(services);
+  activateMenuAtCurrentSection(about);
+}
+
+function activateMenuAtCurrentSection(section) {
+  const targetLine = scrollY + innerHeight / 2;
+
+  //verificar se a seção passou da linha
+  //quais dados vou precisar?
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+
+  const sectionTOpReachorPassedTargetLine = targetLine >= sectionTop;
+
+  const sectionEndsAt = sectionHeight + sectionTop;
+
+  const sectionEndPassedTargetLine = sectionEndsAt <= targetLine;
+
+  const sectionBoundaries =
+    sectionTOpReachorPassedTargetLine && !sectionEndPassedTargetLine;
+
+  const sectionId = section.getAttribute("id");
+  const menuElement = document.querySelector(
+    `nav .menu ul a[href*=${sectionId}]`
+  );
+  if (sectionBoundaries) {
+    menuElement.classList.add("active");
+  } else {
+    menuElement.classList.remove("active");
+  }
+
+  console.log(sectionTop);
 }
 
 function showNavOnScroll() {
