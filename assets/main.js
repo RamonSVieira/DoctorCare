@@ -36,8 +36,6 @@ function activateMenuAtCurrentSection(section) {
   } else {
     menuElement.classList.remove("active");
   }
-
-  console.log(sectionTop);
 }
 
 function showNavOnScroll() {
